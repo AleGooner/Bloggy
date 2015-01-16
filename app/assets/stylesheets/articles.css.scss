@@ -1,0 +1,32 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+$font-stack: Helvetica, sans-serif;
+$primary-color: #211b00;
+$secondary-color: DeepPink;
+
+
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+}
+
+h1, h2, h3, h4 {
+    color: $secondary-color
+}
+
+ul {
+    list-style: square;
+}
+
+a {
+    text-decoration: none;
+    color: $secondary-color;
+}
+
+label { color: $secondary-color;}
+
+a:hover {
+    color: #f069a0;
+    font-size: 95%;
+}
