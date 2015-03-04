@@ -1,14 +1,5 @@
-<!-- We've created a new resource. A resource is the term used for a
-collection of similiar objects, such as articles, people or animals. You
-can Create-Read-Update-Destroy items for a resource and these operations
-are referred to as CRUD operations.-->
-
-<h1>This is a New Article</h1>
-
-<p>Adding a new entry to our blog. The first piece of our blog application.</p>
-
-<%= render 'form' %>
-
-<button>
-    <%= link_to 'Back', articles_path %>
-</button>
+<%- model_class = Article -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize %></h1>
+</div>
+<%= render :partial => 'form' %>
